@@ -27,7 +27,9 @@ h1{
 #taskArea{
     display:flex;
     flex-flow: row wrap;
+    align-items: center;
     width:90%;
+    height:100%;
     border:1px solid rgb(252, 60, 191);
     margin: auto auto;
 }
@@ -35,6 +37,7 @@ h1{
     border-radius:5px 5px 20px 5px; 
     padding:15px; 
     width:75%; 
+    height:95%;
     font-size:14px; 
     background-color: black; 
     color:rgb(159, 60, 252);
@@ -46,7 +49,8 @@ h1{
     background-color: rgb(235, 99, 237);
     border-radius:20px 5px 5px 5px;
     width:25%;
-    padding:8px; 
+    height:90%;
+    padding:10px; 
     font-size:18px;
     font-weight: bold;
     cursor: pointer;
