@@ -102,6 +102,10 @@ h1{
     margin-bottom: 2%;
 }
 
+.itemsClicked .itemsNames{
+    text-decoration: line-through;
+}
+
 .itemsIcons{
     flex: 20%;
     text-align: center;
