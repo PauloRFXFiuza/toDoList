@@ -24,6 +24,7 @@ h1{
     color: rgb(209, 167, 247);
     font-size: 3rem;
 }
+
 #taskArea{
     display:flex;
     flex-flow: row wrap;
@@ -33,6 +34,7 @@ h1{
     border:1px solid rgb(252, 60, 191);
     margin: auto auto;
 }
+
 #inputTask{
     border-radius:5px 5px 20px 5px; 
     padding:15px;
@@ -43,9 +45,11 @@ h1{
     background-color: black; 
     color:rgb(159, 60, 252);
 }
+
 ::placeholder{
     color: rgb(209, 167, 247);
 }
+
 .addTask{
     background-color: rgb(235, 99, 237);
     border-radius:20px 5px 5px 5px;
@@ -56,13 +60,26 @@ h1{
     font-weight: bold;
     cursor: pointer;
 }
+
 #listArea{
     display:flex;
     flex-flow: row wrap;
     width:90%;
     border:1px solid rgb(252, 60, 191);
     margin: auto auto;
+    padding-top: 40px;
 }
+
+.itemsMain{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: rgb(33, 32, 32);
+    height: 80px;
+    width: 100%;
+}
+
 footer{
     padding: 10px;
     font-size: 14px;
@@ -80,6 +97,7 @@ footer{
     font-weight: bold;
     margin: auto auto;
 }
+
 /* Button Styles */
 .icon-button {
     display: inline-flex;
@@ -97,12 +115,15 @@ footer{
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
 .icon-button:hover {
     background-color: rgb(188, 126, 243);
 }
+
 .github {
     color: #171515; /* Cor do ícone do GitHub */
 }
+
 .linkedin {
     color: #0A66C2; /* Cor do ícone do LinkedIn */
 }
