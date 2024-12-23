@@ -55,7 +55,7 @@ h1{
     font-weight: bold; 
 }
 
-.addTask{
+.buttonAddTask{
     background-color: rgb(235, 99, 237);
     border-radius:20px 5px 5px 5px;
     width:25%;
