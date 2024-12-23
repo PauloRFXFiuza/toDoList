@@ -23,6 +23,35 @@ h1{
     color: rgb(209, 167, 247);
     font-size: 3rem;
 }
+#taskArea{
+    display:flex;
+    flex-flow: row wrap;
+    width:90%;
+    border:1px solid rgb(252, 60, 191);
+    margin: auto auto;
+}
+#inputTask{
+    border-radius:5px 5px 20px 5px; 
+    padding:15px; 
+    width:75%; 
+    font-size:14px; 
+    background-color: black; 
+    color:rgb(159, 60, 252);
+}
+::placeholder{
+    color: rgb(209, 167, 247);
+}
+.addTask{
+    background-color: rgb(235, 99, 237);
+    border-radius:20px 5px 5px 5px;
+    width:25%;
+    padding:8px; 
+    font-size:18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
 /*
 
 ::placeholder{
