@@ -35,7 +35,8 @@ h1{
 }
 #inputTask{
     border-radius:5px 5px 20px 5px; 
-    padding:15px; 
+    padding:15px;
+    padding-left: 10%; 
     width:75%; 
     height:95%;
     font-size:14px; 
@@ -55,7 +56,10 @@ h1{
     font-weight: bold;
     cursor: pointer;
 }
-
+#listArea{
+    margin: 2% 2%;
+    border: 1px solid rgb(252, 60, 191);
+}
 footer{
     padding: 10px;
     font-size: 14px;
