@@ -30,10 +30,11 @@ document.getElementById("date").innerHTML="<strong>Today is:</strong> "
 const inputTask= document.getElementById("inputTask"),
 buttonAddTask= document.getElementById("buttonAddTask"),
 listArea = document.getElementById("listArea");
-// 03- Get the typed Value on Input
-function addTask(){
-    const inputValue= inputTask.value;
 
+function addTask(){
+    // 03- Get the typed Value on Input
+    const inputValue= inputTask.value;
+    //04- Validation to allow only data that is not empty, null and undefined.
     if ((inputValue !== "") && 
         (inputValue !== null) && 
         (inputValue !== undefined)) 
@@ -45,15 +46,19 @@ function addTask(){
                 <i class="mdi mdi-circle-outline"></i>
             </div>
             <div class="itemsNames">
-                    Task Test Not Clicked
+                    ${inputValue}
             </div>
             <div class="itemsButtons">
                 <button class="delete"><i class="mdi mdi-delete"></i>Delete</button>
             </div>
             `
             ;
-
+            // 05- Add New Item To Do List 
             listArea.innerHTML += itemsNotClicked;
+            // 06- Clean and focus the Input Task
+            inputTask.value = "";
+            inputTask.focus();
+
     }
 
 }
