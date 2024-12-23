@@ -59,6 +59,8 @@ function addTask(){
             inputTask.value = "";
             inputTask.focus();
 
+    }else{
+        alert("Please enter a valid task.");
     }
 
     
