@@ -104,6 +104,7 @@ h1{
 
 .itemsClicked .itemsNames{
     text-decoration: line-through;
+    color: rgba(210, 167, 247, 0.621);
 }
 
 .itemsIcons{
