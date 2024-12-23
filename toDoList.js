@@ -65,6 +65,9 @@ function addTask(){
 }
 
 // Allows the Enter Keyboard button To The Input Task
+
+//NÃO ESTÀ DANDO CERTO, VERIFICAR O PORQUÊ
+
 inputTask.addEventListener("keyup", function(event){
     if(event.key === "Enter"){
         event.preventDefault();
