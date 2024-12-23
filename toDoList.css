@@ -31,7 +31,6 @@ h1{
     align-items: center;
     width:90%;
     height:100%;
-    border:1px solid rgb(252, 60, 191);
     margin: auto auto;
 }
 
@@ -44,6 +43,8 @@ h1{
     font-size:14px; 
     background-color: black; 
     color:rgb(159, 60, 252);
+    border: none;
+    box-shadow: 0px 1px 5px gray;
 }
 
 ::placeholder{
@@ -59,13 +60,14 @@ h1{
     font-size:18px;
     font-weight: bold;
     cursor: pointer;
+    border: none;
+    box-shadow: 0px 1px 5px rgb(157, 66, 158);
 }
 
 #listArea{
     display:flex;
     flex-flow: row wrap;
     width:90%;
-    border:1px solid rgb(252, 60, 191);
     margin: auto auto;
     padding-top: 40px;
 }
@@ -78,26 +80,40 @@ h1{
     background: rgb(33, 32, 32);
     height: 80px;
     width: 100%;
-    box-shadow: 0 0 20px rgb(17, 17, 17);
+    box-shadow: 0px 1px 5px rgb(17, 17, 17);
 }
 .itemsIcons{
     flex: 20%;
-    border: 1px solid rgb(219, 215, 218);
     text-align: center;
     font-size: 2rem;
 }
 
 .itemsNames{
     flex: 60%;
-    border: 1px solid rgb(42, 9, 140);
     font-size: 20px;
     font-weight: bold;
 }
 
 .itemsButtons{
     flex: 20%;
-    border: 1px solid rgb(112, 140, 9);
     
+    
+}
+
+.delete{
+    background: rgb(157, 12, 111);
+    color: rgb(209, 167, 247);
+    text-align: center;
+    justify-content: center;
+    border: none;
+    padding: 10px;
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    border-radius:5px 15px 5px 5px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0px 1px 5px rgb(113, 8, 80);
 }
 
 footer{
