@@ -1,4 +1,8 @@
 
+*{
+    box-sizing: border-box;
+}
+
 header{
     padding: 20px;
     font-size: 14px;
@@ -7,11 +11,19 @@ header{
     color: rgb(209, 167, 247);
 }
 body{
-    text-align: center;
+    margin:0;
+    padding:0;
     background-color: rgb(49, 49, 49);
     color: rgb(209, 167, 247);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+h1{
+    text-align: center;
+    color: rgb(209, 167, 247);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*
+
 ::placeholder{
     color: rgb(209, 167, 247);
 }
@@ -76,3 +88,4 @@ body{
     background-color: black; 
     color:rgb(159, 60, 252);
 }
+*/
