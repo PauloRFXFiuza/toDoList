@@ -9,6 +9,7 @@ header{
     font-size: 14px;
     text-align: left;
     color: rgb(209, 167, 247);
+    background-color: rgb(33, 32, 32);
 }
 
 body{
@@ -50,6 +51,53 @@ h1{
     font-weight: bold;
     cursor: pointer;
 }
+
+footer{
+    padding: 10px;
+    font-size: 14px;
+    text-align: left;
+    color: rgb(209, 167, 247);
+    background-color: rgb(33, 32, 32);
+    height: auto;
+}
+
+#pauloFiuza{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(252, 60, 191);
+    font-weight: bold;
+    margin: auto auto;
+}
+/* Button Styles */
+.icon-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(209, 167, 247);
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.icon-button:hover {
+    background-color: rgb(188, 126, 243);
+}
+.github {
+    color: #171515; /* Cor do ícone do GitHub */
+}
+.linkedin {
+    color: #0A66C2; /* Cor do ícone do LinkedIn */
+}
+
+
+
 
 
 /*
