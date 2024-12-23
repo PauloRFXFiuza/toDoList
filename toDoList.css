@@ -117,7 +117,6 @@ h1{
 .itemsButtons{
     flex: 20%;
     
-    
 }
 
 .delete{
@@ -125,6 +124,7 @@ h1{
     color: rgb(209, 167, 247);
     text-align: center;
     justify-content: center;
+    margin: -7px;
     border: none;
     padding: 10px;
     height: 40px;
