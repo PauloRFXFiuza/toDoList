@@ -83,19 +83,21 @@ h1{
 .itemsIcons{
     flex: 20%;
     border: 1px solid rgb(219, 215, 218);
-    padding: 5%;
+    text-align: center;
+    font-size: 2rem;
 }
 
 .itemsNames{
     flex: 60%;
     border: 1px solid rgb(42, 9, 140);
-    padding: 5%;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .itemsButtons{
     flex: 20%;
     border: 1px solid rgb(112, 140, 9);
-    padding: 5%;
+    
 }
 
 footer{
