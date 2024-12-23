@@ -23,3 +23,4 @@ const todayDate = new Date().toDateString();
 document.getElementById("date").innerHTML="<strong>Today is:</strong> "
 +literalDay+". "+literalMonths+", "+monthDay+", "+year+"."
 + "<br><strong>Brasília,Brasil Hour:</strong> "+localTime;
+
