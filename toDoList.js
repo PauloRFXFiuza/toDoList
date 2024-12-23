@@ -1,3 +1,5 @@
+// 01- Date and Clock
+
 //Full date and time of today
 const date = new Date();
 //Day of the Month
@@ -24,3 +26,34 @@ document.getElementById("date").innerHTML="<strong>Today is:</strong> "
 +literalDay+". "+literalMonths+", "+monthDay+", "+year+"."
 + "<br><strong>Brasília,Brasil Hour:</strong> "+localTime;
 
+// 02- Create the Input and Button Add Task 
+const inputTask= document.getElementById("inputTask"),
+buttonAddTask= document.getElementById("buttonAddTask"),
+listArea = document.getElementById("listArea");
+// 03- Get the typed Value on Input
+function addTask(){
+    const inputValue= inputTask.value;
+
+    if ((inputValue !== "") && 
+        (inputValue !== null) && 
+        (inputValue !== undefined)) 
+        {
+            const itemsNotClicked = 
+            `
+            <div class="itemsNotClicked">
+            <div class="itemsIcons">
+                <i class="mdi mdi-circle-outline"></i>
+            </div>
+            <div class="itemsNames">
+                    Task Test Not Clicked
+            </div>
+            <div class="itemsButtons">
+                <button class="delete"><i class="mdi mdi-delete"></i>Delete</button>
+            </div>
+            `
+            ;
+
+            listArea.innerHTML += itemsNotClicked;
+    }
+
+}
