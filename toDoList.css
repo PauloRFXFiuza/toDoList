@@ -1,0 +1,78 @@
+
+header{
+    padding: 20px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    color: rgb(209, 167, 247);
+}
+body{
+    text-align: center;
+    background-color: rgb(49, 49, 49);
+    color: rgb(209, 167, 247);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+::placeholder{
+    color: rgb(209, 167, 247);
+}
+#corEscolhida{
+    background-color: rgb(242, 190, 243);
+    border-radius:2px 2px 20px 2px;
+}
+.start{
+    background-color: rgb(242, 190, 243);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius:5px 5px 20px 5px;
+    padding:8px; 
+    font-size:18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.stop{
+    background-color: rgb(239, 52, 242);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius:20px 5px 5px 5px;
+    padding:8px; 
+    font-size:18px;
+    font-weight: bold;
+    color: rgb(79, 26, 239);
+    cursor: pointer;
+}
+.start2{
+    background-color: rgb(242, 190, 243);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius:5px 5px 20px 5px;
+    padding:8px; 
+    width:150px;
+    font-size:18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.set{
+    background-color: rgb(242, 190, 243);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius:5px 5px 20px 5px;
+    padding:8px; 
+    width:150px;
+    font-size:18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.stop2{
+    background-color: rgb(239, 52, 242);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius:20px 5px 5px 5px;
+    padding:8px; 
+    width:150px;
+    font-size:18px;
+    font-weight: bold;
+    color: rgb(79, 26, 239);
+    cursor: pointer;
+}
+#inputTemporizador{
+    border-radius:5px 5px 20px 5px; 
+    padding:15px; width:40vh; 
+    font-size:14px; 
+    background-color: black; 
+    color:rgb(159, 60, 252);
+}
