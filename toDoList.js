@@ -52,7 +52,7 @@ function addTask(){
                     ${inputValue}
             </div>
             <div class="itemsButtons">
-                <button class="delete"><i class="mdi mdi-delete"></i>Delete</button>
+                <button onclick="deleteTask(${count})"class="delete"><i class="mdi mdi-delete"></i>Delete</button>
             </div>
             `
             ;
@@ -66,9 +66,13 @@ function addTask(){
     }else{
         alert("Please enter a valid task.");
     }
+   
+};
 
-    
-}
+function deleteTask(idCount){
+    const task = document.getElementById(idCount);
+    task.remove();
+};
 
 // Allows the Enter Keyboard button To The Input Task
 
