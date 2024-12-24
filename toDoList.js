@@ -40,7 +40,7 @@ function addTask(){
         (inputValue !== null) && 
         (inputValue !== undefined)) 
         {
-            ++count;
+            count++;
 
             const itemsNotClicked = 
             `
