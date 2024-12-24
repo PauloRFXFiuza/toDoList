@@ -45,10 +45,10 @@ function addTask(){
             const itemsNotClicked = 
             `
             <div id="${count}" class="itemsNotClicked">
-            <div class="itemsIcons">
-                <i class="mdi mdi-circle-outline"></i>
+            <div onclick="taskCompleted(${count})" class="itemsIcons">
+                <i id="icon_${count}" class="mdi mdi-circle-outline"></i>
             </div>
-            <div class="itemsNames">
+            <div onclick="taskCompleted(${count})" class="itemsNames">
                     ${inputValue}
             </div>
             <div class="itemsButtons">
@@ -72,6 +72,22 @@ function addTask(){
 function deleteTask(idCount){
     const task = document.getElementById(idCount);
     task.remove();
+};
+
+function taskCompleted(idCount) {
+    const task = document.getElementById(idCount);
+    const classTask = task.getAttribute('class');
+    // returns the value itemsNotClicked
+    // refers to <div id="${count}" class="itemsNotClicked">
+    if (classTask === "itemsNotClicked") {
+        task.classList.remove('itemsNotClicked');
+        task.classList.add('itemsClicked');
+
+        const changeIcon= document.getElementById("icon_"+count);
+
+        changeIcon.classList.remove('mdi-circle-outline');
+        changeIcon.classList.add('mdi-check-circle');
+    }
 };
 
 // Allows the Enter Keyboard button To The Input Task
