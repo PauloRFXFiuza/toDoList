@@ -87,6 +87,14 @@ function taskCompleted(idCount) {
 
         changeIcon.classList.remove('mdi-circle-outline');
         changeIcon.classList.add('mdi-check-circle');
+    }else{
+        task.classList.remove('itemsClicked');
+        task.classList.add('itemsNotClicked');
+
+        const changeIcon= document.getElementById("icon_"+count);
+
+        changeIcon.classList.remove('mdi-check-circle');
+        changeIcon.classList.add('mdi-circle-outline');
     }
 };
 
