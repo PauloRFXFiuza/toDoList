@@ -72,6 +72,11 @@ h1{
     cursor: pointer;
     border: none;
     box-shadow: 0px 1px 5px rgb(157, 66, 158);
+    transition: background-color 0.3s;
+}
+
+.buttonAddTask:hover {
+    background-color: rgb(123, 52, 124);
 }
 
 #listArea{
@@ -148,6 +153,11 @@ h1{
     font-size: 15px;
     font-weight: bold;
     box-shadow: 0px 1px 5px rgb(113, 8, 80);
+    transition: background-color 0.3s;
+}
+
+.delete:hover{
+    background-color: rgb(93, 8, 66);
 }
 
 .mdi-check-circle{
@@ -199,13 +209,16 @@ footer{
 }
 
 .github {
-    color: #171515; /* Cor do ícone do GitHub */
+    color: #171515; /* GitHub Icon*/
 }
 
 .linkedin {
-    color: #0A66C2; /* Cor do ícone do LinkedIn */
+    color: #0A66C2; /* LinkedIn Icon*/
 }
 
+.X {
+    color: #171515; /* X  Icon */
+}
 
 
 
