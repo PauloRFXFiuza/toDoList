@@ -94,7 +94,7 @@ function taskCompleted(idCount) {
     }else{
         task.classList.remove('Clicked');
 
-        var changeIcon= document.getElementById("icon_"+idcount);
+        var changeIcon= document.getElementById("icon_"+idCount);
 
         changeIcon.classList.remove('mdi-check-circle');
         changeIcon.classList.add('mdi-circle-outline');
