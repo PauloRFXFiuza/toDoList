@@ -29,8 +29,8 @@ document.getElementById("date").innerHTML="<strong>Today is:</strong> "
 // 02- Create the Input and Button Add Task 
 const inputTask= document.getElementById("inputTask"),
 buttonAddTask= document.getElementById("buttonAddTask"),
-listArea = document.getElementById("listArea"),
-count = 0;
+listArea = document.getElementById("listArea");
+let count = 0;
 
 function addTask(){
     // 03- Get the typed Value on Input
@@ -40,9 +40,11 @@ function addTask(){
         (inputValue !== null) && 
         (inputValue !== undefined)) 
         {
+            ++count;
+
             const itemsNotClicked = 
             `
-            <div class="itemsNotClicked">
+            <div id="${count}" class="itemsNotClicked">
             <div class="itemsIcons">
                 <i class="mdi mdi-circle-outline"></i>
             </div>
@@ -59,6 +61,7 @@ function addTask(){
             // 06- Clean and focus the Input Task
             inputTask.value = "";
             inputTask.focus();
+
 
     }else{
         alert("Please enter a valid task.");
