@@ -29,7 +29,8 @@ document.getElementById("date").innerHTML="<strong>Today is:</strong> "
 // 02- Create the Input and Button Add Task 
 const inputTask= document.getElementById("inputTask"),
 buttonAddTask= document.getElementById("buttonAddTask"),
-listArea = document.getElementById("listArea");
+listArea = document.getElementById("listArea"),
+count = 0;
 
 function addTask(){
     // 03- Get the typed Value on Input
