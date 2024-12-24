@@ -27,14 +27,14 @@ document.getElementById("date").innerHTML="<strong>Today is:</strong> "
 + "<br><strong>Brasília,Brasil Hour:</strong> "+localTime;
 
 // 02- Create the Input and Button Add Task 
-const inputTask= document.getElementById("inputTask"),
+var inputTask= document.getElementById("inputTask"),
 buttonAddTask= document.getElementById("buttonAddTask"),
 listArea = document.getElementById("listArea");
-let count = 0;
+var count = 0;
 
 function addTask(){
     // 03- Get the typed Value on Input
-    const inputValue= inputTask.value;
+    var inputValue= inputTask.value;
     //04- Validation to allow only data that is not empty, null and undefined.
     if ((inputValue !== "") && 
         (inputValue !== null) && 
@@ -42,17 +42,18 @@ function addTask(){
         {
             count++;
 
-            const itemsNotClicked = 
+            var itemsNotClicked = 
             `
-            <div id="${count}" class="items">
-            <div onclick="taskCompleted(${count})" class="itemsIcons">
-                <i id="icon_${count}" class="mdi mdi-circle-outline"></i>
-            </div>
-            <div onclick="taskCompleted(${count})" class="itemsNames">
+            <div id="${count}" class= "items">
+                <div onclick="taskCompleted(${count})" class= "itemsIcons">
+                    <i id="icon_${count}" class= "mdi mdi-circle-outline"></i>
+                </div>
+                <div onclick="taskCompleted(${count})" class= "itemsNames">
                     ${inputValue}
-            </div>
-            <div class="itemsButtons">
-                <button onclick="deleteTask(${count})"class="delete"><i class="mdi mdi-delete"></i>Delete</button>
+                </div>
+                <div class= "itemsButtons">
+                <button onclick="deleteTask(${count})" class= "delete"><i class= "mdi mdi-delete"></i>Delete</button>
+                </div>
             </div>
             `
             ;
@@ -70,31 +71,30 @@ function addTask(){
 };
 
 function deleteTask(idCount){
-    const task = document.getElementById(idCount);
+    var task = document.getElementById(idCount);
     task.remove();
 };
 
 function taskCompleted(idCount) {
-    const task = document.getElementById(idCount);
-    const classTask = task.getAttribute('class');
+    var task = document.getElementById(idCount);
+    var classTask = task.getAttribute('class');
     // returns the value itemsNotClicked
     // refers to <div id="${count}" class="itemsNotClicked">
-    if (classTask === "items") {
+    if (classTask == "items") {
 
         task.classList.add('Clicked');
         
-        const changeIcon= document.getElementById("icon_"+count);
+        var changeIcon= document.getElementById("icon_"+idCount);
         
         changeIcon.classList.remove('mdi-circle-outline');
         changeIcon.classList.add('mdi-check-circle');
 
         //Comando para colocar o item clicado no final da lista
-
         task.parentNode.appendChild(task);
     }else{
         task.classList.remove('Clicked');
 
-        const changeIcon= document.getElementById("icon_"+count);
+        var changeIcon= document.getElementById("icon_"+count);
 
         changeIcon.classList.remove('mdi-check-circle');
         changeIcon.classList.add('mdi-circle-outline');
