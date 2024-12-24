@@ -87,6 +87,7 @@ h1{
     width: 100%;
     box-shadow: 0px 1px 5px rgb(17, 17, 17);
     margin-bottom: 4%;
+    cursor: pointer;
 }
 
 .itemsClicked{
@@ -100,6 +101,7 @@ h1{
     width: 100%;
     box-shadow: 0px 1px 5px rgb(17, 17, 17);
     margin-bottom: 4%;
+    cursor: pointer;
 }
 
 .itemsClicked .itemsNames{
