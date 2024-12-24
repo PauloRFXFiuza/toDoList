@@ -98,6 +98,7 @@ function taskCompleted(idCount) {
     }
 };
 
+
 // Allows the Enter Keyboard button To The Input Task
 
 //NÃO ESTÀ DANDO CERTO, VERIFICAR O PORQUÊ
