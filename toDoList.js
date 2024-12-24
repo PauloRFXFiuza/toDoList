@@ -44,7 +44,7 @@ function addTask(){
 
             const itemsNotClicked = 
             `
-            <div id="${count}" class="itemsNotClicked">
+            <div id="${count}" class="items">
             <div onclick="taskCompleted(${count})" class="itemsIcons">
                 <i id="icon_${count}" class="mdi mdi-circle-outline"></i>
             </div>
@@ -79,17 +79,20 @@ function taskCompleted(idCount) {
     const classTask = task.getAttribute('class');
     // returns the value itemsNotClicked
     // refers to <div id="${count}" class="itemsNotClicked">
-    if (classTask === "itemsNotClicked") {
-        task.classList.remove('itemsNotClicked');
-        task.classList.add('itemsClicked');
+    if (classTask === "items") {
 
+        task.classList.add('Clicked');
+        
         const changeIcon= document.getElementById("icon_"+count);
-
+        
         changeIcon.classList.remove('mdi-circle-outline');
         changeIcon.classList.add('mdi-check-circle');
+
+        //Comando para colocar o item clicado no final da lista
+
+        task.parentNode.appendChild(task);
     }else{
-        task.classList.remove('itemsClicked');
-        task.classList.add('itemsNotClicked');
+        task.classList.remove('Clicked');
 
         const changeIcon= document.getElementById("icon_"+count);
 

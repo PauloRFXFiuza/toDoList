@@ -76,7 +76,7 @@ h1{
     padding-top: 40px;
 }
 
-.itemsNotClicked{
+.items{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -90,7 +90,7 @@ h1{
     cursor: pointer;
 }
 
-.itemsClicked{
+.items.Clicked{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -104,7 +104,7 @@ h1{
     cursor: pointer;
 }
 
-.itemsClicked .itemsNames{
+.items.Clicked .itemsNames{
     text-decoration: line-through;
     color: rgba(210, 167, 247, 0.621);
 }
