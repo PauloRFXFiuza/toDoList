@@ -89,7 +89,7 @@ function taskCompleted(idCount) {
         changeIcon.classList.remove('mdi-circle-outline');
         changeIcon.classList.add('mdi-check-circle');
 
-        //Comando para colocar o item clicado no final da lista
+        // Command to move the clicked item to the end of the list
         task.parentNode.appendChild(task);
     }else{
         task.classList.remove('Clicked');
@@ -99,7 +99,7 @@ function taskCompleted(idCount) {
         changeIcon.classList.remove('mdi-check-circle');
         changeIcon.classList.add('mdi-circle-outline');
 
-        //Comando para colocar o item clicado no topo da lista
+        // Command to move the clicked item to the top of the list
         task.parentNode.insertBefore(task, task.parentNode.firstChild);
     }
 };
