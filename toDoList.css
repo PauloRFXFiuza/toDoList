@@ -74,6 +74,9 @@ h1{
     width:90%;
     margin: auto auto;
     padding-top: 40px;
+    flex: 1;
+    padding: 20px;
+    min-height: 100%;
 }
 
 .items{
@@ -148,12 +151,12 @@ h1{
 }
 
 footer{
-    padding: 10px;
+    padding: 10px 0;
     font-size: 14px;
     text-align: left;
     color: rgb(209, 167, 247);
     background-color: rgb(33, 32, 32);
-    height: auto;
+    
 }
 
 #pauloFiuza{
