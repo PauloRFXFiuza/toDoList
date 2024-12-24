@@ -107,11 +107,9 @@ function taskCompleted(idCount) {
 
 // Allows the Enter Keyboard button To The Input Task
 
-//NÃO ESTÀ DANDO CERTO, VERIFICAR O PORQUÊ
 
-inputTask.addEventListener("keyup", function(event){
-    if(event.key === "Enter"){
-        event.preventDefault();
-        buttonAddTask.click();
+inputTask.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+      addTask();
     }
 });
